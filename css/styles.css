@@ -1,0 +1,38 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    background-color: whitesmoke;
+}
+#demo {
+    background-color: white;
+}
+.container {
+    display: grid;
+    height: 100vh;
+    grid: auto-flow  3fr 9fr / 4fr 2fr;
+    /*apparently needs to be added after grid shorthand*/
+    grid-gap: 15px; 
+}
+.container > .grid-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Revalia', san-serif;
+    font-size: 16px; 
+    background-color: #808000;
+}
+
+
+.grid-item:nth-of-type(3) {
+    background-color: powderblue;
+    justify-content: left;
+    grid-row: span 3;
+    font-size: 36px;
+    color: blue;
+    text-shadow: 2px 2px 5px #727272;
+}
+
+
+
+
